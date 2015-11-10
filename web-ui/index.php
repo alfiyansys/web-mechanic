@@ -130,8 +130,11 @@ if(!isset($_SESSION['sid'])){
 				<div class="bar" style="transition-duration: 50000ms; width: 100%;"></div>
 			</div>
 			<script type="text/javascript">
+			var c1Iwa = "http://iwakura.reenergy.info/c4m3r4c0ntr0l.php";
+			
+			var act = c1Iwa;
 			$("#up1").click(function(){
-				$.post("c4m3r4c0ntr0l.php",
+				$.post(act,
 					{
 						session: "123",
 						action: "u"
@@ -142,7 +145,7 @@ if(!isset($_SESSION['sid'])){
 			});
 
 			$("#down1").click(function(){
-				$.post("c4m3r4c0ntr0l.php",
+				$.post(act,
 					{
 						session: "123",
 						action: "d"
@@ -153,7 +156,7 @@ if(!isset($_SESSION['sid'])){
 			});
 
 			$("#right1").click(function(){
-				$.post("c4m3r4c0ntr0l.php",
+				$.post(act,
 					{
 						session: "123",
 						action: "r"
@@ -164,7 +167,7 @@ if(!isset($_SESSION['sid'])){
 			});
 
 			$("#left1").click(function(){
-				$.post("c4m3r4c0ntr0l.php",
+				$.post(act,
 					{
 						session: "123",
 						action: "l"
