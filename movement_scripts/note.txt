@@ -1,0 +1,3 @@
+"Bad interpreter"
+
+perl -i -pe's/\r$//;' <file name here>
