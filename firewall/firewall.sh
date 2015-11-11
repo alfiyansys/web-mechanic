@@ -16,5 +16,5 @@ iptables -F -t nat
 iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
 
 # gives SSH to child
-iptables -t nat -A PREROUTING -p tcp -i ppp0 --dport 2222 -j DNAT --to-destination 192.168.1.10:22
+iptables -t nat -A PREROUTING -p tcp -i ppp0 --dport 2222 -j DNAT --to 192.168.1.10:22
 iptables -A FORWARD -p tcp -d 192.168.1.10 --dport 22 -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
