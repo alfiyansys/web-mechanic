@@ -15,6 +15,10 @@ iptables -F -t nat
 # provide internet connection
 iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
 
-# gives SSH to child
+# gives SSH access to child
 iptables -t nat -A PREROUTING -p tcp -i ppp0 --dport 2222 -j DNAT --to 192.168.1.10:22
 iptables -A FORWARD -p tcp -d 192.168.1.10 --dport 22 -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
+
+# gives HTTP access to child
+iptables -t nat -A PREROUTING -p tcp -i ppp0 --dport 8080 -j DNAT --to 192.168.1.10:80
+iptables -A FORWARD -p tcp -d 192.168.1.10 --dport 80 -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
