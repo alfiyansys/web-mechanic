@@ -8,4 +8,4 @@
 echo "1" > /proc/sys/net/ipv4/ip_forward
 iptables -F
 iptables -F -nat
-iptables -t nat -A POSTROUTING -i eth0 -o ppp0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
