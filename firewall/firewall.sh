@@ -10,7 +10,7 @@ echo "1" > /proc/sys/net/ipv4/ip_forward
 
 # flush all tables
 iptables -F
-iptables -F -t -nat
+iptables -F -t nat
 
 # provide internet connection
 iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
