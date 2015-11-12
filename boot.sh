@@ -1,3 +1,4 @@
 #!/bin/bash
 
-minicom <something>
+minicom -b 9600 -o -D /dev/ttyAMA* &
+sleep 10
