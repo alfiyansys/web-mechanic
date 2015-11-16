@@ -1,5 +1,7 @@
 #!/bin/bash
-#make sure root has passwordless SSH access to server
+# Capture script by Muhammad Alfiyan Syamsuddin, 
+# International Exchange Program, Anan National College of Technology, Anan, Tokushima, Japan
+# make sure root has passwordless SSH access to server
 
 DATE=$(date +"%Y-%m-%d_%H%M")
 DEVICE="Iwakura-Mother" #example

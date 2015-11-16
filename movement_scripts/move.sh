@@ -1,4 +1,7 @@
 #!/bin/bash
+# API-Shell Servo Controller by Muhammad Alfiyan Syamsuddin,
+# International Exchange Program, Anan National College of Technology
+# Control servo motor movement using serial connection
 
 if [ "$1" == "d" ]; then
 	echo "d" > /dev/ttyACM*
