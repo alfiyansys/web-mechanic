@@ -39,6 +39,12 @@ if(isset($_POST['session'])){
 			}else if($_POST['action'] == 'L'){
 				echo "LEFT";
 				exec("/var/www/html/move.sh L");
+			}else if($_POST['action'] == 'S'){
+				echo "Detach servo!";
+				exec("/var/www/html/move.sh S");
+			}else if($_POST['action'] == 's'){
+				echo "Attach servo!";
+				exec("/var/www/html/move.sh s");
 			}else{
 				echo "Wrong action!";
 			} 

@@ -19,4 +19,8 @@ elif [ "$1" == "L" ]; then
         echo "L" > /dev/ttyACM*
 elif [ "$1" == "R" ]; then
         echo "R" > /dev/ttyACM*
+elif [ "$1" == "S" ]; then
+        echo "S" > /dev/ttyACM*
+elif [ "$1" == "s" ]; then
+        echo "s" > /dev/ttyACM*
 fi
