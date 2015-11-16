@@ -1,4 +1,11 @@
 <?php
+/*
+PHP-API Servo Controller by Muhammad Alfiyan Syamsuddin, 
+International Exchange Program, Anan National College of Technology 2015
+
+this script receive HTTP request from main server and send command to corresponded shell script
+*/
+
 session_start();
 
 //test only
