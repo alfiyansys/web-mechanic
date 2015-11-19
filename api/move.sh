@@ -23,4 +23,6 @@ elif [ "$1" == "S" ]; then
         echo "S" > /dev/ttyACM*
 elif [ "$1" == "s" ]; then
         echo "s" > /dev/ttyACM*
+elif [ "$1" == "c" ]; then
+        echo "c" > /dev/ttyACM*
 fi
