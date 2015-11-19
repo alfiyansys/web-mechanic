@@ -3,6 +3,8 @@
 # International Exchange Program, Anan National College of Technology
 # Control servo motor movement using serial connection
 
+stty -F /dev/ttyACM* 9600 cs8 cread clocal # make sure initialized
+
 if [ "$1" == "d" ]; then
 	echo "d" > /dev/ttyACM*
 elif [ "$1" == "u" ]; then
