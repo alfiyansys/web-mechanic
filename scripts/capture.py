@@ -1,2 +1,3 @@
 import subprocess
-subprocess.call("/home/pi/scripts/capture.sh")
+cmd = ['sudo', '/home/pi/scripts/capture.sh']
+proc = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
