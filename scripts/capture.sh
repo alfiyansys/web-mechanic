@@ -7,7 +7,7 @@
 DATE=$(date +"%Y%m%d-%H%M")
 DEVICE="Kitagawa"
 SAVE="/var/www/current.jpg"
-raspistill -vf -hf -w 1024 -h 768 -rot 270 -o $SAVE
+/usr/bin/raspistill -vf -hf -w 1024 -h 768 -rot 270 -o $SAVE
 #make sure target directory exists
 #FNAME=$DEVICE-$DATE
 FNAME=$DATE
