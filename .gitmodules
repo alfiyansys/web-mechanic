@@ -1,0 +1,16 @@
+[submodule "arduino"]
+	path = arduino
+	url = git@github.com:alfiyansys/web-mechanic.git
+	branch = arduino
+[submodule "pi"]
+	path = pi
+	url = git@github.com:alfiyansys/web-mechanic.git
+	branch = pi
+[submodule "pi-mother"]
+	path = pi-mother
+	url = git@github.com:alfiyansys/web-mechanic.git
+	branch = pi-mother
+[submodule "server"]
+	path = server
+	url = git@github.com:alfiyansys/web-mechanic.git
+	branch = server
